@@ -1,70 +1,78 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+```markdown
+# React Google Calendar Integration
 
-## Available Scripts
+A simple React component to fetch and display events from **Google Calendar**.
 
-In the project directory, you can run:
+## 🚀 Features
+- Fetches public events from a Google Calendar.
+- Displays events in a clean and customizable UI.
+- Supports authentication for private calendars.
+- Lightweight and easy to integrate.
 
-### `npm start`
+## 📦 Installation
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+```sh
+yarn add react-google-calendar
+```
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+or using npm:
 
-### `npm test`
+```sh
+npm install react-google-calendar
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 🔧 Setup
 
-### `npm run build`
+1. **Enable Google Calendar API**
+   - Go to the [Google Cloud Console](https://console.cloud.google.com/).
+   - Create a new project or select an existing one.
+   - Enable the **Google Calendar API**.
+   - Create OAuth 2.0 credentials and get your **Client ID** and **API Key**.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+2. **Set up OAuth consent**
+   - Configure the OAuth screen for your application.
+   - Add `http://localhost:3000` (or your deployment URL) to **Authorized JavaScript origins**.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+3. **Add API Keys to `.env`**
+   - Create a `.env` file in your project root:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+   ```sh
+   REACT_APP_GOOGLE_API_KEY=your_api_key
+   REACT_APP_GOOGLE_CLIENT_ID=your_client_id
+   ```
 
-### `npm run eject`
+## ScreenShoot 
+link: https://google-calendar-clone.netlify.app/
+![image](https://github.com/user-attachments/assets/9ea6e289-a0ff-433a-bcc0-a1baf7dd2192)
+![image](https://github.com/user-attachments/assets/927ecbe7-9940-4fc2-8231-7b21c43018f4)
+![image](https://github.com/user-attachments/assets/50390f05-a497-4529-a1a5-efebf140c62a)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
+## 🎨 Customization
+- Modify the UI to fit your design.
+- Fetch events from a specific calendar using `calendarId: "your_calendar_id"`.
+- Customize event filtering and sorting.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## ⚡️ Contributing
+Contributions are welcome! Feel free to submit issues and pull requests.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 📄 License
+This project is licensed under the **MIT License**.
 
-### Code Splitting
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Happy coding! 🎉
+```
 
-### Analyzing the Bundle Size
+This README covers:
+- Installation using **Yarn**  
+- Setting up Google Calendar API  
+- Authentication and fetching events  
+- A working **React example**  
+- Customization options  
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Let me know if you need any modifications! 🚀
