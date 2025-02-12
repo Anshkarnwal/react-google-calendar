@@ -36,3 +36,19 @@
     transform: rotate(360deg);
   }
 }
+
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr); /* 7 columns for 7 days */
+  gap: 5px;
+  padding: 10px;
+}
+
+.calendar-cell {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  border: 1px solid #ddd;
+  min-height: 50px;
+}
